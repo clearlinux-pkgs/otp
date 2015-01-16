@@ -1,0 +1,1 @@
+--enable-shared-zlib  --enable-systemd --with-ssl --without-javac --without-wx --enable-hipe

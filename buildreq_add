@@ -1,0 +1,15 @@
+# This file contains additional build requirements that did not get
+# picked up automatically. One name per line, no whitespace.
+systemd-dev
+flex
+bison
+libxslt-bin
+libxml2-dev
+ncurses-dev
+openssl-dev
+mesa-dev
+openssh
+zlib-dev
+valgrind
+flex
+bison
