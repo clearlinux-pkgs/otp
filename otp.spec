@@ -4,7 +4,7 @@
 #
 Name     : otp
 Version  : _src_17.5
-Release  : 20
+Release  : 21
 URL      : http://www.erlang.org/download/otp_src_17.5.tar.gz
 Source0  : http://www.erlang.org/download/otp_src_17.5.tar.gz
 Source1  : epmd.service
