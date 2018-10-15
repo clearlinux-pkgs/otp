@@ -1,14 +1,10 @@
 [Unit]
 Description=Erlang Port Mapper Daemon
 After=network.target
-Requires=epmd.socket
 
 [Service]
-ExecStart=/usr/bin/epmd -systemd
-#ExecStop=/usr/bin/epmd -kill
-Type=notify
-StandardOutput=journal
-StandardError=journal
+ExecStart=/usr/bin/epmd
+Type=simple
 DeviceAllow=/dev/null rw
 PrivateTmp=true
 #CapabilityBoundingSet=
@@ -20,6 +16,4 @@ User=epmd
 Group=epmd
 
 [Install]
-Also=epmd.socket
 WantedBy=multi-user.target
-

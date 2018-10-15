@@ -4,18 +4,18 @@
 #
 Name     : otp
 Version  : 21.1
-Release  : 24
+Release  : 25
 URL      : http://erlang.org/download/otp_src_21.1.tar.gz
 Source0  : http://erlang.org/download/otp_src_21.1.tar.gz
 Source1  : epmd.service
-Source2  : epmd.socket
 Summary  : No detailed summary available
 Group    : Development/Tools
 License  : Apache-2.0 BSD-3-Clause MIT OpenSSL
-Requires: otp-bin
-Requires: otp-config
-Requires: otp-lib
-Requires: otp-license
+Requires: otp-bin = %{version}-%{release}
+Requires: otp-config = %{version}-%{release}
+Requires: otp-data = %{version}-%{release}
+Requires: otp-lib = %{version}-%{release}
+Requires: otp-license = %{version}-%{release}
 BuildRequires : bison
 BuildRequires : flex
 BuildRequires : libxml2-dev
@@ -39,6 +39,7 @@ http://www.apache.org/licenses/LICENSE-2.0
 %package bin
 Summary: bin components for the otp package.
 Group: Binaries
+Requires: otp-data = %{version}-%{release}
 Requires: otp-config = %{version}-%{release}
 Requires: otp-license = %{version}-%{release}
 
@@ -54,28 +55,30 @@ Group: Default
 config components for the otp package.
 
 
+%package data
+Summary: data components for the otp package.
+Group: Data
+
+%description data
+data components for the otp package.
+
+
 %package dev
 Summary: dev components for the otp package.
 Group: Development
 Requires: otp-lib = %{version}-%{release}
 Requires: otp-bin = %{version}-%{release}
+Requires: otp-data = %{version}-%{release}
 Provides: otp-devel = %{version}-%{release}
 
 %description dev
 dev components for the otp package.
 
 
-%package doc
-Summary: doc components for the otp package.
-Group: Documentation
-
-%description doc
-doc components for the otp package.
-
-
 %package lib
 Summary: lib components for the otp package.
 Group: Libraries
+Requires: otp-data = %{version}-%{release}
 Requires: otp-license = %{version}-%{release}
 
 %description lib
@@ -98,23 +101,22 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1537930878
+export SOURCE_DATE_EPOCH=1539620035
 %configure --disable-static --enable-shared-zlib  --enable-systemd --with-ssl --without-javac --without-wx --enable-hipe
 make  %{?_smp_mflags}
 
 %install
-export SOURCE_DATE_EPOCH=1537930878
+export SOURCE_DATE_EPOCH=1539620035
 rm -rf %{buildroot}
-mkdir -p %{buildroot}/usr/share/doc/otp
-cp LICENSE.txt %{buildroot}/usr/share/doc/otp/LICENSE.txt
-cp erts/emulator/pcre/LICENCE %{buildroot}/usr/share/doc/otp/erts_emulator_pcre_LICENCE
-cp lib/crypto/doc/src/licenses.xml %{buildroot}/usr/share/doc/otp/lib_crypto_doc_src_licenses.xml
-cp lib/eldap/LICENSE %{buildroot}/usr/share/doc/otp/lib_eldap_LICENSE
-cp lib/wx/LICENSE.txt %{buildroot}/usr/share/doc/otp/lib_wx_LICENSE.txt
+mkdir -p %{buildroot}/usr/share/package-licenses/otp
+cp LICENSE.txt %{buildroot}/usr/share/package-licenses/otp/LICENSE.txt
+cp erts/emulator/pcre/LICENCE %{buildroot}/usr/share/package-licenses/otp/erts_emulator_pcre_LICENCE
+cp lib/crypto/doc/src/licenses.xml %{buildroot}/usr/share/package-licenses/otp/lib_crypto_doc_src_licenses.xml
+cp lib/eldap/LICENSE %{buildroot}/usr/share/package-licenses/otp/lib_eldap_LICENSE
+cp lib/wx/LICENSE.txt %{buildroot}/usr/share/package-licenses/otp/lib_wx_LICENSE.txt
 %make_install
 mkdir -p %{buildroot}/usr/lib/systemd/system
 install -m 0644 %{SOURCE1} %{buildroot}/usr/lib/systemd/system/epmd.service
-install -m 0644 %{SOURCE2} %{buildroot}/usr/lib/systemd/system/epmd.socket
 ## install_append content
 mkdir -p  %{buildroot}/usr/bin
 ln -s /usr/lib64/erlang/lib/erl_interface-3.7.20/bin/erl_call %{buildroot}/usr/bin/erl_call
@@ -3304,7 +3306,10 @@ ln -s /usr/lib64/erlang/lib/erl_interface-3.7.20/bin/erl_call %{buildroot}/usr/b
 %files config
 %defattr(-,root,root,-)
 /usr/lib/systemd/system/epmd.service
-/usr/lib/systemd/system/epmd.socket
+
+%files data
+%defattr(-,root,root,-)
+/usr/share/package-licenses/otp/erts_emulator_pcre_LICENCE
 
 %files dev
 %defattr(-,root,root,-)
@@ -3379,10 +3384,6 @@ ln -s /usr/lib64/erlang/lib/erl_interface-3.7.20/bin/erl_call %{buildroot}/usr/b
 /usr/lib64/erlang/usr/include/erl_nif.h
 /usr/lib64/erlang/usr/include/erl_nif_api_funcs.h
 
-%files doc
-%defattr(0644,root,root,0755)
-/usr/share/doc/otp/erts_emulator_pcre_LICENCE
-
 %files lib
 %defattr(-,root,root,-)
 /usr/lib64/erlang/lib/asn1-5.0.7/priv/lib/asn1rt_nif.so
@@ -3397,7 +3398,7 @@ ln -s /usr/lib64/erlang/lib/erl_interface-3.7.20/bin/erl_call %{buildroot}/usr/b
 
 %files license
 %defattr(0644,root,root,0755)
-/usr/share/doc/otp/LICENSE.txt
-/usr/share/doc/otp/lib_crypto_doc_src_licenses.xml
-/usr/share/doc/otp/lib_eldap_LICENSE
-/usr/share/doc/otp/lib_wx_LICENSE.txt
+/usr/share/package-licenses/otp/LICENSE.txt
+/usr/share/package-licenses/otp/lib_crypto_doc_src_licenses.xml
+/usr/share/package-licenses/otp/lib_eldap_LICENSE
+/usr/share/package-licenses/otp/lib_wx_LICENSE.txt
