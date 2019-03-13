@@ -16,6 +16,12 @@ Configure miss: nptl/pthread.h
 Configure miss: pthread/mit/pthread.h usability
 Configure miss: pthread/mit/pthread.h presence
 Configure miss: pthread/mit/pthread.h
+Configure miss: 128-bit __atomic_store_n()
+Configure miss: 128-bit __atomic_load_n()
+Configure miss: 128-bit __atomic_add_fetch()
+Configure miss: 128-bit __atomic_fetch_and()
+Configure miss: 128-bit __atomic_fetch_or()
+Configure miss: 128-bit __atomic_compare_exchange_n()
 Configure miss: mixed cygwin or msys and native VC++ environment
 Configure miss: mixed cygwin and native MinGW environment
 Configure miss: if we mix cygwin with any native compiler
@@ -128,5 +134,6 @@ Configure miss: mach clock_get_time() with wall clock type
 Configure miss: if gethrvtime works and how to use it
 Configure miss: whether to redefine FD_SETSIZE
 Configure miss: whether putenv() stores a copy of the key-value pair
+Configure miss: static ZLib to be used by SSL in standard locations
 Configure miss: OpenSSL kerberos 5 support
 Configure miss: kvm_open in -lkvm
