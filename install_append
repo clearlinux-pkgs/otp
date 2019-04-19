@@ -1,2 +1,2 @@
 mkdir -p  %{buildroot}/usr/bin
-ln -s /usr/lib64/erlang/lib/erl_interface-3.7.20/bin/erl_call %{buildroot}/usr/bin/erl_call
+ln -s /usr/lib64/erlang/lib/erl_interface-3.11/bin/erl_call %{buildroot}/usr/bin/erl_call
