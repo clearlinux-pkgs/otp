@@ -4,7 +4,7 @@
 #
 Name     : otp
 Version  : 21.3
-Release  : 30
+Release  : 31
 URL      : http://erlang.org/download/otp_src_21.3.tar.gz
 Source0  : http://erlang.org/download/otp_src_21.3.tar.gz
 Source1  : epmd.service
@@ -30,10 +30,13 @@ BuildRequires : valgrind
 BuildRequires : zlib-dev
 
 %description
-Licensed under the Apache License, Version 2.0 (the "License");
-you may not use this file except in compliance with the License.
-You may obtain a copy of the License at
-http://www.apache.org/licenses/LICENSE-2.0
+Hi,
+This is 'eldap', the Erlang LDAP library.
+It exports an API that can do all possible operations
+you may want to do against an LDAP server. The code has
+been tested to work at some point, but only the bind
+and search operations are running daily in our products,
+so there may be bugs lurking in some parts of the code.
 
 %package bin
 Summary: bin components for the otp package.
@@ -90,13 +93,12 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1555638166
-export LDFLAGS="${LDFLAGS} -fno-lto"
+export SOURCE_DATE_EPOCH=1555953475
 %configure --disable-static --enable-shared-zlib  --enable-systemd --with-ssl --without-javac --without-wx --enable-hipe
 make  %{?_smp_mflags}
 
 %install
-export SOURCE_DATE_EPOCH=1555638166
+export SOURCE_DATE_EPOCH=1555953475
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/otp
 cp LICENSE.txt %{buildroot}/usr/share/package-licenses/otp/LICENSE.txt
@@ -111,6 +113,7 @@ install -m 0644 %{SOURCE1} %{buildroot}/usr/lib/systemd/system/epmd.service
 ## install_append content
 mkdir -p  %{buildroot}/usr/bin
 ln -s /usr/lib64/erlang/lib/erl_interface-3.11/bin/erl_call %{buildroot}/usr/bin/erl_call
+chmod -R go-w %{buildroot}/usr/lib64/
 ## install_append end
 
 %files

@@ -134,6 +134,7 @@ Configure miss: mach clock_get_time() with wall clock type
 Configure miss: if gethrvtime works and how to use it
 Configure miss: whether to redefine FD_SETSIZE
 Configure miss: whether putenv() stores a copy of the key-value pair
+Configure miss: whether the code model is small
 Configure miss: static ZLib to be used by SSL in standard locations
 Configure miss: OpenSSL kerberos 5 support
 Configure miss: kvm_open in -lkvm

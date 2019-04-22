@@ -1,2 +1,3 @@
 mkdir -p  %{buildroot}/usr/bin
 ln -s /usr/lib64/erlang/lib/erl_interface-3.11/bin/erl_call %{buildroot}/usr/bin/erl_call
+chmod -R go-w %{buildroot}/usr/lib64/
