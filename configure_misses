@@ -1,53 +1,3 @@
-Configure miss: x86_64-generic-linux-gnu-ld
-Configure miss: ld.sh
-Configure miss: x86_64-generic-linux-gnu-ld
-Configure miss: whether compilation mode forces ARCH adjustment
-Configure miss: getpeername in -lsocket
-Configure miss: res_gethostbyname
-Configure miss: res_gethostbyname in -lresolv
-Configure miss: mixed cygwin or msys and native VC++ environment
-Configure miss: mixed cygwin and native MinGW environment
-Configure miss: if we mix cygwin with any native compiler
-Configure miss: if we mix msys with another native compiler
-Configure miss: native win32 threads
-Configure miss: nptl/pthread.h usability
-Configure miss: nptl/pthread.h presence
-Configure miss: nptl/pthread.h
-Configure miss: pthread/mit/pthread.h usability
-Configure miss: pthread/mit/pthread.h presence
-Configure miss: pthread/mit/pthread.h
-Configure miss: 128-bit __atomic_store_n()
-Configure miss: 128-bit __atomic_load_n()
-Configure miss: 128-bit __atomic_add_fetch()
-Configure miss: 128-bit __atomic_fetch_and()
-Configure miss: 128-bit __atomic_fetch_or()
-Configure miss: 128-bit __atomic_compare_exchange_n()
-Configure miss: mixed cygwin or msys and native VC++ environment
-Configure miss: mixed cygwin and native MinGW environment
-Configure miss: if we mix cygwin with any native compiler
-Configure miss: if we mix msys with another native compiler
-Configure miss: ld.sh
-Configure miss: x86_64-generic-linux-gnu-ld
-Configure miss: winsock2.h usability
-Configure miss: winsock2.h presence
-Configure miss: native win32 threads
-Configure miss: nptl/pthread.h usability
-Configure miss: nptl/pthread.h presence
-Configure miss: nptl/pthread.h
-Configure miss: pthread/mit/pthread.h usability
-Configure miss: pthread/mit/pthread.h presence
-Configure miss: pthread/mit/pthread.h
-Configure miss: mixed cygwin or msys and native VC++ environment
-Configure miss: mixed cygwin and native MinGW environment
-Configure miss: if we mix cygwin with any native compiler
-Configure miss: if we mix msys with another native compiler
-Configure miss: GL/glu.h usability
-Configure miss: GL/glu.h presence
-Configure miss: GL/glu.h
-Configure miss: OpenGL/glu.h usability
-Configure miss: OpenGL/glu.h presence
-Configure miss: OpenGL/glu.h
-Configure miss: debug build of wxWidgets... checking for wx-config
 Configure miss: mixed cygwin or msys and native VC++ environment
 Configure miss: mixed cygwin and native MinGW environment
 Configure miss: if we mix cygwin with any native compiler
@@ -124,7 +74,6 @@ Configure miss: time2posix
 Configure miss: isfinite
 Configure miss: whether posix2time is declared
 Configure miss: whether time2posix is declared
-Configure miss: if vfork is known to hang multithreaded applications
 Configure miss: pset functionality
 Configure miss: processor_bind functionality
 Configure miss: cpuset_getaffinity/cpuset_setaffinity
@@ -135,6 +84,89 @@ Configure miss: if gethrvtime works and how to use it
 Configure miss: whether to redefine FD_SETSIZE
 Configure miss: whether putenv() stores a copy of the key-value pair
 Configure miss: whether the code model is small
+Configure miss: kvm_open in -lkvm
+Configure miss: x86_64-generic-linux-gnu-ld
+Configure miss: mixed cygwin or msys and native VC++ environment
+Configure miss: mixed cygwin and native MinGW environment
+Configure miss: if we mix cygwin with any native compiler
+Configure miss: if we mix msys with another native compiler
+Configure miss: native win32 threads
+Configure miss: nptl/pthread.h usability
+Configure miss: nptl/pthread.h presence
+Configure miss: nptl/pthread.h
+Configure miss: pthread/mit/pthread.h usability
+Configure miss: pthread/mit/pthread.h presence
+Configure miss: pthread/mit/pthread.h
+Configure miss: mixed cygwin or msys and native VC++ environment
+Configure miss: mixed cygwin and native MinGW environment
+Configure miss: if we mix cygwin with any native compiler
+Configure miss: if we mix msys with another native compiler
+Configure miss: native win32 threads
+Configure miss: nptl/pthread.h usability
+Configure miss: nptl/pthread.h presence
+Configure miss: nptl/pthread.h
+Configure miss: pthread/mit/pthread.h usability
+Configure miss: pthread/mit/pthread.h presence
+Configure miss: pthread/mit/pthread.h
 Configure miss: static ZLib to be used by SSL in standard locations
 Configure miss: OpenSSL kerberos 5 support
-Configure miss: kvm_open in -lkvm
+Configure miss: ld.sh
+Configure miss: x86_64-generic-linux-gnu-ld
+Configure miss: whether compilation mode forces ARCH adjustment
+Configure miss: getpeername in -lsocket
+Configure miss: res_gethostbyname
+Configure miss: res_gethostbyname in -lresolv
+Configure miss: mixed cygwin or msys and native VC++ environment
+Configure miss: mixed cygwin and native MinGW environment
+Configure miss: if we mix cygwin with any native compiler
+Configure miss: if we mix msys with another native compiler
+Configure miss: native win32 threads
+Configure miss: nptl/pthread.h usability
+Configure miss: nptl/pthread.h presence
+Configure miss: nptl/pthread.h
+Configure miss: pthread/mit/pthread.h usability
+Configure miss: pthread/mit/pthread.h presence
+Configure miss: pthread/mit/pthread.h
+Configure miss: 128-bit __atomic_store_n()
+Configure miss: 128-bit __atomic_load_n()
+Configure miss: 128-bit __atomic_add_fetch()
+Configure miss: 128-bit __atomic_fetch_and()
+Configure miss: 128-bit __atomic_fetch_or()
+Configure miss: 128-bit __atomic_compare_exchange_n()
+Configure miss: mixed cygwin or msys and native VC++ environment
+Configure miss: mixed cygwin and native MinGW environment
+Configure miss: if we mix cygwin with any native compiler
+Configure miss: if we mix msys with another native compiler
+Configure miss: native win32 threads
+Configure miss: nptl/pthread.h usability
+Configure miss: nptl/pthread.h presence
+Configure miss: nptl/pthread.h
+Configure miss: pthread/mit/pthread.h usability
+Configure miss: pthread/mit/pthread.h presence
+Configure miss: pthread/mit/pthread.h
+Configure miss: mixed cygwin or msys and native VC++ environment
+Configure miss: mixed cygwin and native MinGW environment
+Configure miss: if we mix cygwin with any native compiler
+Configure miss: if we mix msys with another native compiler
+Configure miss: ld.sh
+Configure miss: x86_64-generic-linux-gnu-ld
+Configure miss: winsock2.h usability
+Configure miss: winsock2.h presence
+Configure miss: native win32 threads
+Configure miss: nptl/pthread.h usability
+Configure miss: nptl/pthread.h presence
+Configure miss: nptl/pthread.h
+Configure miss: pthread/mit/pthread.h usability
+Configure miss: pthread/mit/pthread.h presence
+Configure miss: pthread/mit/pthread.h
+Configure miss: mixed cygwin or msys and native VC++ environment
+Configure miss: mixed cygwin and native MinGW environment
+Configure miss: if we mix cygwin with any native compiler
+Configure miss: if we mix msys with another native compiler
+Configure miss: GL/glu.h usability
+Configure miss: GL/glu.h presence
+Configure miss: GL/glu.h
+Configure miss: OpenGL/glu.h usability
+Configure miss: OpenGL/glu.h presence
+Configure miss: OpenGL/glu.h
+Configure miss: debug build of wxWidgets... checking for wx-config
