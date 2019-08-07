@@ -32,6 +32,9 @@ Configure miss: closefrom
 Configure miss: whether lock checking should be enabled
 Configure miss: whether lock counters should be enabled
 Configure miss: whether dlopen() needs to be called before first call to dlerror()
+Configure miss: sys/stropts.h usability
+Configure miss: sys/stropts.h presence
+Configure miss: sys/stropts.h
 Configure miss: sys/socketio.h usability
 Configure miss: sys/socketio.h presence
 Configure miss: sys/socketio.h

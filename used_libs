@@ -4,7 +4,6 @@ libdl.so.2
 libm.so.6
 libodbc.so.2
 libpthread.so.0
-librt.so.1
 libsystemd.so.0
 libtinfo.so.6
 libutil.so.1

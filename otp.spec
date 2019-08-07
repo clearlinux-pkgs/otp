@@ -4,7 +4,7 @@
 #
 Name     : otp
 Version  : 22.0
-Release  : 32
+Release  : 33
 URL      : http://erlang.org/download/otp_src_22.0.tar.gz
 Source0  : http://erlang.org/download/otp_src_22.0.tar.gz
 Source1  : epmd.service
@@ -89,8 +89,8 @@ services components for the otp package.
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
-export LANG=C
-export SOURCE_DATE_EPOCH=1563870997
+export LANG=C.UTF-8
+export SOURCE_DATE_EPOCH=1565218944
 export GCC_IGNORE_WERROR=1
 export CFLAGS="$CFLAGS -fno-lto "
 export FCFLAGS="$CFLAGS -fno-lto "
@@ -100,7 +100,7 @@ export CXXFLAGS="$CXXFLAGS -fno-lto "
 make  %{?_smp_mflags}
 
 %install
-export SOURCE_DATE_EPOCH=1563870997
+export SOURCE_DATE_EPOCH=1565218944
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/otp
 cp LICENSE.txt %{buildroot}/usr/share/package-licenses/otp/LICENSE.txt
@@ -114,7 +114,7 @@ mkdir -p %{buildroot}/usr/lib/systemd/system
 install -m 0644 %{SOURCE1} %{buildroot}/usr/lib/systemd/system/epmd.service
 ## install_append content
 mkdir -p  %{buildroot}/usr/bin
-ln -s /usr/lib64/erlang/lib/erl_interface-3.11/bin/erl_call %{buildroot}/usr/bin/erl_call
+ln -s /usr/lib64/erlang/lib/erl_interface-3.12/bin/erl_call %{buildroot}/usr/bin/erl_call
 chmod -R go-w %{buildroot}/usr/lib64/
 ## install_append end
 
