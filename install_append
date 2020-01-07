@@ -1,3 +1,5 @@
-mkdir -p  %{buildroot}/usr/bin
-ln -s /usr/lib64/erlang/lib/erl_interface-3.12/bin/erl_call %{buildroot}/usr/bin/erl_call
+mkdir -p %{buildroot}/usr/bin
+dest=$(find %{buildroot}/usr/lib64/erlang/lib/ -path '*/bin/erl_call' | sed 's,^%{buildroot},,')
+if test -z "$dest"; then exit 1; fi
+ln -sv $dest %{buildroot}/usr/bin/erl_call
 chmod -R go-w %{buildroot}/usr/lib64/

@@ -4,15 +4,16 @@
 #
 Name     : otp
 Version  : 22.2
-Release  : 34
+Release  : 35
 URL      : http://erlang.org/download/otp_src_22.2.tar.gz
 Source0  : http://erlang.org/download/otp_src_22.2.tar.gz
 Source1  : epmd.service
 Summary  : No detailed summary available
 Group    : Development/Tools
-License  : Apache-2.0
+License  : Apache-2.0 BSD-3-Clause MIT OpenSSL
 Requires: otp-bin = %{version}-%{release}
 Requires: otp-lib = %{version}-%{release}
+Requires: otp-license = %{version}-%{release}
 Requires: otp-services = %{version}-%{release}
 BuildRequires : bison
 BuildRequires : flex
@@ -37,6 +38,7 @@ http://www.apache.org/licenses/LICENSE-2.0
 %package bin
 Summary: bin components for the otp package.
 Group: Binaries
+Requires: otp-license = %{version}-%{release}
 Requires: otp-services = %{version}-%{release}
 
 %description bin
@@ -58,9 +60,18 @@ dev components for the otp package.
 %package lib
 Summary: lib components for the otp package.
 Group: Libraries
+Requires: otp-license = %{version}-%{release}
 
 %description lib
 lib components for the otp package.
+
+
+%package license
+Summary: license components for the otp package.
+Group: Default
+
+%description license
+license components for the otp package.
 
 
 %package services
@@ -73,13 +84,14 @@ services components for the otp package.
 
 %prep
 %setup -q -n otp_src_22.2
+cd %{_builddir}/otp_src_22.2
 
 %build
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1578326398
+export SOURCE_DATE_EPOCH=1578426995
 export GCC_IGNORE_WERROR=1
 export CFLAGS="$CFLAGS -fno-lto "
 export FCFLAGS="$CFLAGS -fno-lto "
@@ -89,14 +101,22 @@ export CXXFLAGS="$CXXFLAGS -fno-lto "
 make  %{?_smp_mflags}
 
 %install
-export SOURCE_DATE_EPOCH=1578326398
+export SOURCE_DATE_EPOCH=1578426995
 rm -rf %{buildroot}
+mkdir -p %{buildroot}/usr/share/package-licenses/otp
+cp %{_builddir}/otp_src_22.2/LICENSE.txt %{buildroot}/usr/share/package-licenses/otp/04319952ed7b0f3b3a70ae4d5d9f954317b8f970
+cp %{_builddir}/otp_src_22.2/erts/emulator/pcre/LICENCE %{buildroot}/usr/share/package-licenses/otp/b484ed9eed7f5e6787f10a215fdf5cd86c0db496
+cp %{_builddir}/otp_src_22.2/lib/crypto/doc/src/licenses.xml %{buildroot}/usr/share/package-licenses/otp/f84a9a3daf1663dbe17d7f6a300e840741bad5f6
+cp %{_builddir}/otp_src_22.2/lib/eldap/LICENSE %{buildroot}/usr/share/package-licenses/otp/7feb364b08ec99cdbbefb1b08885ee3c74308456
+cp %{_builddir}/otp_src_22.2/lib/wx/LICENSE.txt %{buildroot}/usr/share/package-licenses/otp/04319952ed7b0f3b3a70ae4d5d9f954317b8f970
 %make_install
 mkdir -p %{buildroot}/usr/lib/systemd/system
 install -m 0644 %{SOURCE1} %{buildroot}/usr/lib/systemd/system/epmd.service
 ## install_append content
-mkdir -p  %{buildroot}/usr/bin
-ln -s /usr/lib64/erlang/lib/erl_interface-3.12/bin/erl_call %{buildroot}/usr/bin/erl_call
+mkdir -p %{buildroot}/usr/bin
+dest=$(find %{buildroot}/usr/lib64/erlang/lib/ -path '*/bin/erl_call' | sed 's,^%{buildroot},,')
+if test -z "$dest"; then exit 1; fi
+ln -sv $dest %{buildroot}/usr/bin/erl_call
 chmod -R go-w %{buildroot}/usr/lib64/
 ## install_append end
 
@@ -3434,6 +3454,13 @@ chmod -R go-w %{buildroot}/usr/lib64/
 /usr/lib64/erlang/lib/runtime_tools-1.14/priv/lib/dyntrace.so
 /usr/lib64/erlang/lib/runtime_tools-1.14/priv/lib/trace_file_drv.so
 /usr/lib64/erlang/lib/runtime_tools-1.14/priv/lib/trace_ip_drv.so
+
+%files license
+%defattr(0644,root,root,0755)
+/usr/share/package-licenses/otp/04319952ed7b0f3b3a70ae4d5d9f954317b8f970
+/usr/share/package-licenses/otp/7feb364b08ec99cdbbefb1b08885ee3c74308456
+/usr/share/package-licenses/otp/b484ed9eed7f5e6787f10a215fdf5cd86c0db496
+/usr/share/package-licenses/otp/f84a9a3daf1663dbe17d7f6a300e840741bad5f6
 
 %files services
 %defattr(-,root,root,-)
