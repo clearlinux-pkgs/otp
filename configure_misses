@@ -1,175 +1,174 @@
-Configure miss: mixed cygwin or msys and native VC++ environment
-Configure miss: mixed cygwin and native MinGW environment
+Configure miss: 128-bit __atomic_add_fetch()
+Configure miss: 128-bit __atomic_add_fetch()
+Configure miss: 128-bit __atomic_compare_exchange_n()
+Configure miss: 128-bit __atomic_compare_exchange_n()
+Configure miss: 128-bit __atomic_fetch_and()
+Configure miss: 128-bit __atomic_fetch_and()
+Configure miss: 128-bit __atomic_fetch_or()
+Configure miss: 128-bit __atomic_fetch_or()
+Configure miss: 128-bit __atomic_load_n()
+Configure miss: 128-bit __atomic_load_n()
+Configure miss: 128-bit __atomic_store_n()
+Configure miss: 128-bit __atomic_store_n()
+Configure miss: __brk
+Configure miss: _brk
+Configure miss: _sbrk
+Configure miss: a usable libatomic_ops implementation
+Configure miss: broken gcc-4.3.0 compiler
+Configure miss: clock_get_attributes
+Configure miss: closefrom
+Configure miss: cpuset_getaffinity/cpuset_setaffinity
+Configure miss: dlpi_open in -ldlpi
+Configure miss: dlpi_open in -ldlpi
+Configure miss: fpsetmask
+Configure miss: gethostbyname in -lnsl
+Configure miss: getipnodebyaddr
+Configure miss: getipnodebyname
+Configure miss: getpeername in -lsocket
+Configure miss: ieee_handler
+Configure miss: if VM has to be linked with Carbon framework
+Configure miss: if __after_morecore_hook can track malloc()s core memory use
+Configure miss: if gethrvtime works and how to use it
+Configure miss: if sbrk()/brk() wrappers can track malloc()s core memory use
+Configure miss: if we are building a sharing-preserving emulator
+Configure miss: if we mix WSL with another native compiler
+Configure miss: if we mix WSL with another native compiler
+Configure miss: if we mix WSL with another native compiler
+Configure miss: if we mix WSL with another native compiler
+Configure miss: if we mix WSL with another native compiler
+Configure miss: if we mix WSL with another native compiler
+Configure miss: if we mix cygwin with any native compiler
+Configure miss: if we mix cygwin with any native compiler
+Configure miss: if we mix cygwin with any native compiler
+Configure miss: if we mix cygwin with any native compiler
+Configure miss: if we mix cygwin with any native compiler
 Configure miss: if we mix cygwin with any native compiler
 Configure miss: if we mix msys with another native compiler
+Configure miss: if we mix msys with another native compiler
+Configure miss: if we mix msys with another native compiler
+Configure miss: if we mix msys with another native compiler
+Configure miss: if we mix msys with another native compiler
+Configure miss: if we mix msys with another native compiler
+Configure miss: if we should add -fno-tree-copyrename to CFLAGS for computed gotos to work properly
+Configure miss: if windows.h includes winsock2.h
+Configure miss: isfinite
+Configure miss: kstat_open in -lkstat
+Configure miss: kvm_open in -lkvm
 Configure miss: large file support CFLAGS
 Configure miss: large file support LDFLAGS
 Configure miss: large file support LIBS
-Configure miss: whether gcc accepts -fprofile-instr-generate -Werror...
-Configure miss: whether compilation mode forces ARCH adjustment
-Configure miss: if VM has to be linked with Carbon framework
-Configure miss: if we are building a sharing-preserving emulator
-Configure miss: native win32 threads
-Configure miss: nptl/pthread.h usability
-Configure miss: nptl/pthread.h presence
-Configure miss: nptl/pthread.h
-Configure miss: pthread/mit/pthread.h usability
-Configure miss: pthread/mit/pthread.h presence
-Configure miss: pthread/mit/pthread.h
-Configure miss: kstat_open in -lkstat
-Configure miss: clock_get_attributes
-Configure miss: mach clock_get_time() with monotonic clock type
-Configure miss: 128-bit __atomic_store_n()
-Configure miss: 128-bit __atomic_load_n()
-Configure miss: 128-bit __atomic_add_fetch()
-Configure miss: 128-bit __atomic_fetch_and()
-Configure miss: 128-bit __atomic_fetch_or()
-Configure miss: 128-bit __atomic_compare_exchange_n()
-Configure miss: a usable libatomic_ops implementation
-Configure miss: whether default stack size should be modified
-Configure miss: whether double word ordering is middle-endian
-Configure miss: closefrom
-Configure miss: whether lock checking should be enabled
-Configure miss: whether lock counters should be enabled
-Configure miss: whether dlopen() needs to be called before first call to dlerror()
-Configure miss: sys/stropts.h usability
-Configure miss: sys/stropts.h presence
-Configure miss: sys/stropts.h
-Configure miss: sys/socketio.h usability
-Configure miss: sys/socketio.h presence
-Configure miss: sys/socketio.h
-Configure miss: libdlpi.h usability
-Configure miss: libdlpi.h presence
-Configure miss: libdlpi.h
-Configure miss: sdkddkver.h usability
-Configure miss: sdkddkver.h presence
-Configure miss: sdkddkver.h
-Configure miss: struct ifreq.ifr_enaddr
-Configure miss: dlpi_open in -ldlpi
-Configure miss: dlpi_open in -ldlpi
-Configure miss: sys/event.h usability
-Configure miss: sys/event.h presence
-Configure miss: sys/event.h
-Configure miss: sys/devpoll.h usability
-Configure miss: sys/devpoll.h presence
-Configure miss: sys/devpoll.h
-Configure miss: netinet/sctp.h
-Configure miss: setns.h usability
-Configure miss: setns.h presence
-Configure miss: setns.h
-Configure miss: if windows.h includes winsock2.h
-Configure miss: whether struct sockaddr has sa_len field
-Configure miss: struct exception (and matherr function)
-Configure miss: broken gcc-4.3.0 compiler
-Configure miss: winsock2.h usability
-Configure miss: winsock2.h presence
-Configure miss: ws2tcpip.h
-Configure miss: getipnodebyname
-Configure miss: getipnodebyaddr
-Configure miss: ieee_handler
-Configure miss: fpsetmask
-Configure miss: res_gethostbyname
-Configure miss: _sbrk
-Configure miss: _brk
-Configure miss: __brk
-Configure miss: posix2time
-Configure miss: time2posix
-Configure miss: isfinite
-Configure miss: whether posix2time is declared
-Configure miss: whether time2posix is declared
-Configure miss: pset functionality
-Configure miss: processor_bind functionality
-Configure miss: cpuset_getaffinity/cpuset_setaffinity
-Configure miss: if __after_morecore_hook can track malloc()s core memory use
-Configure miss: if sbrk()/brk() wrappers can track malloc()s core memory use
-Configure miss: mach clock_get_time() with wall clock type
-Configure miss: if gethrvtime works and how to use it
-Configure miss: whether to redefine FD_SETSIZE
-Configure miss: whether putenv() stores a copy of the key-value pair
-Configure miss: whether the code model is small
-Configure miss: kvm_open in -lkvm
-Configure miss: x86_64-generic-linux-gnu-ld
-Configure miss: mixed cygwin or msys and native VC++ environment
-Configure miss: mixed cygwin and native MinGW environment
-Configure miss: if we mix cygwin with any native compiler
-Configure miss: if we mix msys with another native compiler
-Configure miss: native win32 threads
-Configure miss: nptl/pthread.h usability
-Configure miss: nptl/pthread.h presence
-Configure miss: nptl/pthread.h
-Configure miss: pthread/mit/pthread.h usability
-Configure miss: pthread/mit/pthread.h presence
-Configure miss: pthread/mit/pthread.h
-Configure miss: mixed cygwin or msys and native VC++ environment
-Configure miss: mixed cygwin and native MinGW environment
-Configure miss: if we mix cygwin with any native compiler
-Configure miss: if we mix msys with another native compiler
-Configure miss: native win32 threads
-Configure miss: nptl/pthread.h usability
-Configure miss: nptl/pthread.h presence
-Configure miss: nptl/pthread.h
-Configure miss: pthread/mit/pthread.h usability
-Configure miss: pthread/mit/pthread.h presence
-Configure miss: pthread/mit/pthread.h
-Configure miss: static ZLib to be used by SSL in standard locations
-Configure miss: OpenSSL kerberos 5 support
 Configure miss: ld.sh
-Configure miss: x86_64-generic-linux-gnu-ld
-Configure miss: whether compilation mode forces ARCH adjustment
-Configure miss: getpeername in -lsocket
+Configure miss: ld.sh
+Configure miss: libdlpi.h
+Configure miss: libdlpi.h presence
+Configure miss: libdlpi.h usability
+Configure miss: mach clock_get_time() with monotonic clock type
+Configure miss: mach clock_get_time() with wall clock type
+Configure miss: mixed cygwin and native MinGW environment
+Configure miss: mixed cygwin and native MinGW environment
+Configure miss: mixed cygwin and native MinGW environment
+Configure miss: mixed cygwin and native MinGW environment
+Configure miss: mixed cygwin and native MinGW environment
+Configure miss: mixed cygwin and native MinGW environment
+Configure miss: mixed mingw-gcc and native VC++ environment
+Configure miss: mixed mingw-gcc and native VC++ environment
+Configure miss: mixed mingw-gcc and native VC++ environment
+Configure miss: mixed mingw-gcc and native VC++ environment
+Configure miss: mixed mingw-gcc and native VC++ environment
+Configure miss: mixed mingw-gcc and native VC++ environment
+Configure miss: multiarch directory
+Configure miss: native win32 threads
+Configure miss: native win32 threads
+Configure miss: native win32 threads
+Configure miss: native win32 threads
+Configure miss: native win32 threads
+Configure miss: native win32 threads
+Configure miss: netinet/sctp.h
+Configure miss: nptl/pthread.h
+Configure miss: nptl/pthread.h
+Configure miss: nptl/pthread.h
+Configure miss: nptl/pthread.h
+Configure miss: nptl/pthread.h
+Configure miss: nptl/pthread.h
+Configure miss: nptl/pthread.h presence
+Configure miss: nptl/pthread.h presence
+Configure miss: nptl/pthread.h presence
+Configure miss: nptl/pthread.h presence
+Configure miss: nptl/pthread.h presence
+Configure miss: nptl/pthread.h presence
+Configure miss: nptl/pthread.h usability
+Configure miss: nptl/pthread.h usability
+Configure miss: nptl/pthread.h usability
+Configure miss: nptl/pthread.h usability
+Configure miss: nptl/pthread.h usability
+Configure miss: nptl/pthread.h usability
+Configure miss: posix2time
+Configure miss: processor_bind functionality
+Configure miss: pset functionality
+Configure miss: pthread/mit/pthread.h
+Configure miss: pthread/mit/pthread.h
+Configure miss: pthread/mit/pthread.h
+Configure miss: pthread/mit/pthread.h
+Configure miss: pthread/mit/pthread.h
+Configure miss: pthread/mit/pthread.h
+Configure miss: pthread/mit/pthread.h presence
+Configure miss: pthread/mit/pthread.h presence
+Configure miss: pthread/mit/pthread.h presence
+Configure miss: pthread/mit/pthread.h presence
+Configure miss: pthread/mit/pthread.h presence
+Configure miss: pthread/mit/pthread.h presence
+Configure miss: pthread/mit/pthread.h usability
+Configure miss: pthread/mit/pthread.h usability
+Configure miss: pthread/mit/pthread.h usability
+Configure miss: pthread/mit/pthread.h usability
+Configure miss: pthread/mit/pthread.h usability
+Configure miss: pthread/mit/pthread.h usability
+Configure miss: res_gethostbyname
 Configure miss: res_gethostbyname
 Configure miss: res_gethostbyname in -lresolv
-Configure miss: mixed cygwin or msys and native VC++ environment
-Configure miss: mixed cygwin and native MinGW environment
-Configure miss: if we mix cygwin with any native compiler
-Configure miss: if we mix msys with another native compiler
-Configure miss: native win32 threads
-Configure miss: nptl/pthread.h usability
-Configure miss: nptl/pthread.h presence
-Configure miss: nptl/pthread.h
-Configure miss: pthread/mit/pthread.h usability
-Configure miss: pthread/mit/pthread.h presence
-Configure miss: pthread/mit/pthread.h
-Configure miss: 128-bit __atomic_store_n()
-Configure miss: 128-bit __atomic_load_n()
-Configure miss: 128-bit __atomic_add_fetch()
-Configure miss: 128-bit __atomic_fetch_and()
-Configure miss: 128-bit __atomic_fetch_or()
-Configure miss: 128-bit __atomic_compare_exchange_n()
-Configure miss: mixed cygwin or msys and native VC++ environment
-Configure miss: mixed cygwin and native MinGW environment
-Configure miss: if we mix cygwin with any native compiler
-Configure miss: if we mix msys with another native compiler
-Configure miss: native win32 threads
-Configure miss: nptl/pthread.h usability
-Configure miss: nptl/pthread.h presence
-Configure miss: nptl/pthread.h
-Configure miss: pthread/mit/pthread.h usability
-Configure miss: pthread/mit/pthread.h presence
-Configure miss: pthread/mit/pthread.h
-Configure miss: mixed cygwin or msys and native VC++ environment
-Configure miss: mixed cygwin and native MinGW environment
-Configure miss: if we mix cygwin with any native compiler
-Configure miss: if we mix msys with another native compiler
-Configure miss: ld.sh
-Configure miss: x86_64-generic-linux-gnu-ld
-Configure miss: winsock2.h usability
+Configure miss: sdkddkver.h
+Configure miss: sdkddkver.h presence
+Configure miss: sdkddkver.h usability
+Configure miss: setns.h
+Configure miss: setns.h presence
+Configure miss: setns.h usability
+Configure miss: static zlib
+Configure miss: struct ifreq.ifr_enaddr
+Configure miss: sys/devpoll.h
+Configure miss: sys/devpoll.h presence
+Configure miss: sys/devpoll.h usability
+Configure miss: sys/event.h
+Configure miss: sys/event.h presence
+Configure miss: sys/event.h usability
+Configure miss: sys/socketio.h
+Configure miss: sys/socketio.h presence
+Configure miss: sys/socketio.h usability
+Configure miss: sys/stropts.h
+Configure miss: sys/stropts.h presence
+Configure miss: sys/stropts.h usability
+Configure miss: sys/sysctl.h
+Configure miss: sys/sysctl.h presence
+Configure miss: sys/sysctl.h usability
+Configure miss: sys_errlist declaration in stdio.h or errno.h
+Configure miss: time2posix
+Configure miss: whether compilation mode forces ARCH adjustment
+Configure miss: whether compilation mode forces ARCH adjustment
+Configure miss: whether default stack size should be modified
+Configure miss: whether dlopen() needs to be called before first call to dlerror()
+Configure miss: whether double word ordering is middle-endian
+Configure miss: whether gcc accepts -fprofile-instr-generate -Werror...
+Configure miss: whether lock checking should be enabled
+Configure miss: whether lock counters should be enabled
+Configure miss: whether posix2time is declared
+Configure miss: whether putenv() stores a copy of the key-value pair
+Configure miss: whether struct sockaddr has sa_len field
+Configure miss: whether time2posix is declared
+Configure miss: whether to redefine FD_SETSIZE
 Configure miss: winsock2.h presence
-Configure miss: native win32 threads
-Configure miss: nptl/pthread.h usability
-Configure miss: nptl/pthread.h presence
-Configure miss: nptl/pthread.h
-Configure miss: pthread/mit/pthread.h usability
-Configure miss: pthread/mit/pthread.h presence
-Configure miss: pthread/mit/pthread.h
-Configure miss: mixed cygwin or msys and native VC++ environment
-Configure miss: mixed cygwin and native MinGW environment
-Configure miss: if we mix cygwin with any native compiler
-Configure miss: if we mix msys with another native compiler
-Configure miss: GL/glu.h usability
-Configure miss: GL/glu.h presence
-Configure miss: GL/glu.h
-Configure miss: OpenGL/glu.h usability
-Configure miss: OpenGL/glu.h presence
-Configure miss: OpenGL/glu.h
-Configure miss: debug build of wxWidgets... checking for wx-config
+Configure miss: winsock2.h presence
+Configure miss: winsock2.h usability
+Configure miss: winsock2.h usability
+Configure miss: ws2tcpip.h
+Configure miss: x86_64-generic-linux-gnu-ld
+Configure miss: x86_64-generic-linux-gnu-ld
+Configure miss: x86_64-generic-linux-gnu-ld
