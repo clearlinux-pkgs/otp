@@ -16,7 +16,6 @@ Configure miss: _sbrk
 Configure miss: a usable libatomic_ops implementation
 Configure miss: broken gcc-4.3.0 compiler
 Configure miss: clock_get_attributes
-Configure miss: closefrom
 Configure miss: cpuset_getaffinity/cpuset_setaffinity
 Configure miss: dlpi_open in -ldlpi
 Configure miss: dlpi_open in -ldlpi
@@ -123,6 +122,7 @@ Configure miss: pthread/mit/pthread.h usability
 Configure miss: pthread/mit/pthread.h usability
 Configure miss: pthread/mit/pthread.h usability
 Configure miss: pthread/mit/pthread.h usability
+Configure miss: pthread_yield
 Configure miss: res_gethostbyname
 Configure miss: res_gethostbyname
 Configure miss: res_gethostbyname in -lresolv
