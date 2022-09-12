@@ -4,7 +4,7 @@
 #
 Name     : otp
 Version  : 24.1
-Release  : 38
+Release  : 39
 URL      : https://erlang.org/download/otp_src_24.1.tar.gz
 Source0  : https://erlang.org/download/otp_src_24.1.tar.gz
 Source1  : epmd.service
