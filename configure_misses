@@ -20,10 +20,12 @@ Configure miss: cpuset_getaffinity/cpuset_setaffinity
 Configure miss: dlpi_open in -ldlpi
 Configure miss: dlpi_open in -ldlpi
 Configure miss: fpsetmask
-Configure miss: gethostbyname in -lnsl
+Configure miss: g++ option to enable C++11 features
+Configure miss: g++ option to enable C++11 features
+Configure miss: gcc options needed to detect all undeclared functions
+Configure miss: gcc options needed to detect all undeclared functions
 Configure miss: getipnodebyaddr
 Configure miss: getipnodebyname
-Configure miss: getpeername in -lsocket
 Configure miss: ieee_handler
 Configure miss: if VM has to be linked with Carbon framework
 Configure miss: if __after_morecore_hook can track malloc()s core memory use
@@ -59,8 +61,6 @@ Configure miss: large file support LIBS
 Configure miss: ld.sh
 Configure miss: ld.sh
 Configure miss: libdlpi.h
-Configure miss: libdlpi.h presence
-Configure miss: libdlpi.h usability
 Configure miss: mach clock_get_time() with monotonic clock type
 Configure miss: mach clock_get_time() with wall clock type
 Configure miss: mixed cygwin and native MinGW environment
@@ -89,18 +89,6 @@ Configure miss: nptl/pthread.h
 Configure miss: nptl/pthread.h
 Configure miss: nptl/pthread.h
 Configure miss: nptl/pthread.h
-Configure miss: nptl/pthread.h presence
-Configure miss: nptl/pthread.h presence
-Configure miss: nptl/pthread.h presence
-Configure miss: nptl/pthread.h presence
-Configure miss: nptl/pthread.h presence
-Configure miss: nptl/pthread.h presence
-Configure miss: nptl/pthread.h usability
-Configure miss: nptl/pthread.h usability
-Configure miss: nptl/pthread.h usability
-Configure miss: nptl/pthread.h usability
-Configure miss: nptl/pthread.h usability
-Configure miss: nptl/pthread.h usability
 Configure miss: posix2time
 Configure miss: processor_bind functionality
 Configure miss: pset functionality
@@ -110,45 +98,21 @@ Configure miss: pthread/mit/pthread.h
 Configure miss: pthread/mit/pthread.h
 Configure miss: pthread/mit/pthread.h
 Configure miss: pthread/mit/pthread.h
-Configure miss: pthread/mit/pthread.h presence
-Configure miss: pthread/mit/pthread.h presence
-Configure miss: pthread/mit/pthread.h presence
-Configure miss: pthread/mit/pthread.h presence
-Configure miss: pthread/mit/pthread.h presence
-Configure miss: pthread/mit/pthread.h presence
-Configure miss: pthread/mit/pthread.h usability
-Configure miss: pthread/mit/pthread.h usability
-Configure miss: pthread/mit/pthread.h usability
-Configure miss: pthread/mit/pthread.h usability
-Configure miss: pthread/mit/pthread.h usability
-Configure miss: pthread/mit/pthread.h usability
 Configure miss: pthread_yield
 Configure miss: res_gethostbyname
 Configure miss: res_gethostbyname
 Configure miss: res_gethostbyname in -lresolv
 Configure miss: sdkddkver.h
-Configure miss: sdkddkver.h presence
-Configure miss: sdkddkver.h usability
 Configure miss: setns.h
-Configure miss: setns.h presence
-Configure miss: setns.h usability
 Configure miss: static zlib
 Configure miss: struct ifreq.ifr_enaddr
+Configure miss: struct ifreq.ifr_index
+Configure miss: struct sockaddr_dl.sdl_len
 Configure miss: sys/devpoll.h
-Configure miss: sys/devpoll.h presence
-Configure miss: sys/devpoll.h usability
 Configure miss: sys/event.h
-Configure miss: sys/event.h presence
-Configure miss: sys/event.h usability
 Configure miss: sys/socketio.h
-Configure miss: sys/socketio.h presence
-Configure miss: sys/socketio.h usability
 Configure miss: sys/stropts.h
-Configure miss: sys/stropts.h presence
-Configure miss: sys/stropts.h usability
 Configure miss: sys/sysctl.h
-Configure miss: sys/sysctl.h presence
-Configure miss: sys/sysctl.h usability
 Configure miss: sys_errlist declaration in stdio.h or errno.h
 Configure miss: time2posix
 Configure miss: whether compilation mode forces ARCH adjustment
@@ -164,10 +128,6 @@ Configure miss: whether putenv() stores a copy of the key-value pair
 Configure miss: whether struct sockaddr has sa_len field
 Configure miss: whether time2posix is declared
 Configure miss: whether to redefine FD_SETSIZE
-Configure miss: winsock2.h presence
-Configure miss: winsock2.h presence
-Configure miss: winsock2.h usability
-Configure miss: winsock2.h usability
 Configure miss: ws2tcpip.h
 Configure miss: x86_64-generic-linux-gnu-ld
 Configure miss: x86_64-generic-linux-gnu-ld
