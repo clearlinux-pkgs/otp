@@ -19,9 +19,21 @@ Configure miss: clock_get_attributes
 Configure miss: cpuset_getaffinity/cpuset_setaffinity
 Configure miss: dlpi_open in -ldlpi
 Configure miss: dlpi_open in -ldlpi
+Configure miss: elixir
+Configure miss: ex_doc
 Configure miss: fpsetmask
 Configure miss: g++ option to enable C++11 features
 Configure miss: g++ option to enable C++11 features
+Configure miss: gcc option for timestamps after 2038
+Configure miss: gcc option for timestamps after 2038
+Configure miss: gcc option for timestamps after 2038
+Configure miss: gcc option for timestamps after 2038
+Configure miss: gcc option for timestamps after 2038
+Configure miss: gcc option to enable large file support
+Configure miss: gcc option to enable large file support
+Configure miss: gcc option to enable large file support
+Configure miss: gcc option to enable large file support
+Configure miss: gcc option to enable large file support
 Configure miss: gcc options needed to detect all undeclared functions
 Configure miss: gcc options needed to detect all undeclared functions
 Configure miss: getipnodebyaddr
@@ -32,6 +44,8 @@ Configure miss: if __after_morecore_hook can track malloc()s core memory use
 Configure miss: if gethrvtime works and how to use it
 Configure miss: if sbrk()/brk() wrappers can track malloc()s core memory use
 Configure miss: if we are building a sharing-preserving emulator
+Configure miss: if we can add -Werror -Wunused-command-argument to LDFLAGS
+Configure miss: if we can add -Wl,-z,common-page-size=2097152 to LDFLAGS
 Configure miss: if we mix WSL with another native compiler
 Configure miss: if we mix WSL with another native compiler
 Configure miss: if we mix WSL with another native compiler
@@ -55,9 +69,6 @@ Configure miss: if windows.h includes winsock2.h
 Configure miss: isfinite
 Configure miss: kstat_open in -lkstat
 Configure miss: kvm_open in -lkvm
-Configure miss: large file support CFLAGS
-Configure miss: large file support LDFLAGS
-Configure miss: large file support LIBS
 Configure miss: ld.sh
 Configure miss: ld.sh
 Configure miss: libdlpi.h
@@ -128,6 +139,7 @@ Configure miss: whether putenv() stores a copy of the key-value pair
 Configure miss: whether struct sockaddr has sa_len field
 Configure miss: whether time2posix is declared
 Configure miss: whether to redefine FD_SETSIZE
+Configure miss: working poll()
 Configure miss: ws2tcpip.h
 Configure miss: x86_64-generic-linux-gnu-ld
 Configure miss: x86_64-generic-linux-gnu-ld
