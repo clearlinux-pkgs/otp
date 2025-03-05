@@ -139,7 +139,6 @@ Configure miss: whether putenv() stores a copy of the key-value pair
 Configure miss: whether struct sockaddr has sa_len field
 Configure miss: whether time2posix is declared
 Configure miss: whether to redefine FD_SETSIZE
-Configure miss: working poll()
 Configure miss: ws2tcpip.h
 Configure miss: x86_64-generic-linux-gnu-ld
 Configure miss: x86_64-generic-linux-gnu-ld
