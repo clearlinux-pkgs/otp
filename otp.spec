@@ -7,7 +7,7 @@
 #
 Name     : otp
 Version  : 27.3
-Release  : 50
+Release  : 51
 URL      : https://erlang.org/download/otp_src_27.3.tar.gz
 Source0  : https://erlang.org/download/otp_src_27.3.tar.gz
 Source1  : epmd.service
