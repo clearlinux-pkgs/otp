@@ -19,7 +19,6 @@ Configure miss: clock_get_attributes
 Configure miss: cpuset_getaffinity/cpuset_setaffinity
 Configure miss: dlpi_open in -ldlpi
 Configure miss: dlpi_open in -ldlpi
-Configure miss: elixir
 Configure miss: ex_doc
 Configure miss: fpsetmask
 Configure miss: g++ option to enable C++11 features
@@ -46,6 +45,13 @@ Configure miss: if sbrk()/brk() wrappers can track malloc()s core memory use
 Configure miss: if we are building a sharing-preserving emulator
 Configure miss: if we can add -Werror -Wunused-command-argument to LDFLAGS
 Configure miss: if we can add -Wl,-z,common-page-size=2097152 to LDFLAGS
+Configure miss: if we can add -mbranch-protection=standard to CFLAGS (via CFLAGS)
+Configure miss: if we can add -mbranch-protection=standard to CFLAGS (via CFLAGS)
+Configure miss: if we can add -mbranch-protection=standard to CFLAGS (via CFLAGS)
+Configure miss: if we can add -mbranch-protection=standard to DED_CFLAGS (via CFLAGS)
+Configure miss: if we can add -mbranch-protection=standard to DED_CFLAGS (via CFLAGS)
+Configure miss: if we can add -mbranch-protection=standard to DED_CFLAGS (via CFLAGS)
+Configure miss: if we can add -mbranch-protection=standard to DED_CFLAGS (via CFLAGS)
 Configure miss: if we mix WSL with another native compiler
 Configure miss: if we mix WSL with another native compiler
 Configure miss: if we mix WSL with another native compiler
@@ -69,6 +75,10 @@ Configure miss: if windows.h includes winsock2.h
 Configure miss: isfinite
 Configure miss: kstat_open in -lkstat
 Configure miss: kvm_open in -lkvm
+Configure miss: ld.sh
+Configure miss: ld.sh
+Configure miss: ld.sh
+Configure miss: ld.sh
 Configure miss: ld.sh
 Configure miss: ld.sh
 Configure miss: libdlpi.h
@@ -140,6 +150,9 @@ Configure miss: whether struct sockaddr has sa_len field
 Configure miss: whether time2posix is declared
 Configure miss: whether to redefine FD_SETSIZE
 Configure miss: ws2tcpip.h
+Configure miss: x86_64-generic-linux-gnu-ld
+Configure miss: x86_64-generic-linux-gnu-ld
+Configure miss: x86_64-generic-linux-gnu-ld
 Configure miss: x86_64-generic-linux-gnu-ld
 Configure miss: x86_64-generic-linux-gnu-ld
 Configure miss: x86_64-generic-linux-gnu-ld
